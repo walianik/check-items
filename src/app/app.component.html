@@ -1,0 +1,21 @@
+<div class="app">
+    <div class="add-button">
+      <span>Add Item to List : </span>
+      <button (click)="performAction(Action.Add)">ADD</button>
+    </div>
+  <div class="parent">
+    <div class="panels">
+      <div class="left-panel">
+        <app-left-panel></app-left-panel>
+      </div>
+      <div class="right-panel">
+        <div class="button-panel">
+          <button (click)="performAction(Action.Previous)">Previous</button>
+          <button (click)="performAction(Action.Next)">Next</button>
+        </div>
+        <app-right-panel></app-right-panel>
+        <button (click)="performAction(Action.Delete)" class="delete-button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

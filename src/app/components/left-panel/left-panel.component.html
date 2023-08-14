@@ -1,0 +1,10 @@
+<div class="panel">
+  <div
+    *ngFor="let item of items; let idx = index"
+    [class.selected]="item.isSelected"
+    class="each-panel"
+    (click)="selectItem(idx)"
+  >
+    {{ item.item.name }}
+  </div>
+</div>

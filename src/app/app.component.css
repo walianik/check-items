@@ -1,0 +1,75 @@
+/* app.component.css */
+.app {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; */
+}
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.add-button{
+  position: absolute;
+  display: flex;
+  top: 40px;
+  width: 200px;
+  left: 50px;
+  justify-content: space-between;
+
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 90%;
+}
+.left-panel{
+  width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.right-panel{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.panels{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  min-height: 150px;
+}
+.button-panel{
+  top: 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+.right-panel app-right-panel{
+  top: 70px;
+  position: absolute;
+}
+.delete-button{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}

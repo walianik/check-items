@@ -1,0 +1,30 @@
+.panel {
+  border: 1px solid #ccc;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.panel-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 30px;
+}
+
+.panel-item.selected {
+  background-color: #f0f0f0;
+}
+
+.panel-item:hover {
+  background-color: #f5f5f5;
+}
+.each-panel{
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.each-panel:last-child{
+  border: none;
+}
